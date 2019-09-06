@@ -1,10 +1,10 @@
 <template>
-    <div class="card">
+    <div class="info-card">
       <mdb-card>
-        <mdb-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%286%29.jpg" alt="Card image cap"></mdb-card-image>
-        <mdb-card-body>
+        <mdb-card-image v-bind:src="imgSrc" v-bind:alt="altText"></mdb-card-image>
+        <mdb-card-body class="fix-width">
           <mdb-card-title>{{title}}</mdb-card-title>
-          <mdb-card-text>{{Content}}</mdb-card-text>
+          <mdb-card-text class="wrap-words">{{Content}}</mdb-card-text>
         </mdb-card-body>
       </mdb-card>
     </div>
@@ -22,11 +22,17 @@
             mdbCardText,
             mdbBtn
         },
-        props:["title","Content"]
+        props:["title","Content","imgSrc","altText"]
     }
 </script>
-<style>
-    .card{
-        margin-top:50px;
+<style scoped>
+    .fix-width{
+        width:700px;
     }
+    .info-card{
+        margin-bottom:50px;
+    }
+    .wrap-words{
+        word-wrap:break-word;
+    }        
 </style>
