@@ -15,7 +15,7 @@
     data() {
       return {
         lineChartData: {
-          labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
           datasets: [
             {
               label: "ImageNet",
@@ -29,7 +29,7 @@
               backgroundColor: "rgba(151,187,205,0.2)",
               borderColor: "rgba(151,187,205,1)",
               borderWidth: 0.8,
-              data: [28, 48, 40, 19, 86, 27, 90]
+              data: [28, 48, 40, 19, 86, 27, 1]
             }
           ]
         },
