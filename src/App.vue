@@ -2,7 +2,7 @@
   <div id="app">
     <Navbar v-on:change_page="changeRender"/>
     <div v-if="page === 'A'">
-        <HomePage/>
+        <HomePage v-on:change_page="changeRender"/>
     </div>  
     <div v-if="page === 'B'">
         <DatasetPage/>

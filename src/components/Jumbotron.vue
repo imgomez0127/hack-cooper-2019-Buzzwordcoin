@@ -7,7 +7,7 @@
             <p class="mx-5 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam, voluptatem,
               optio vero odio nam sit officia accusamus minus error nisi architecto nulla ipsum dignissimos. Odit sed qui, dolorum!
             </p>
-            <mdb-btn outline="white" size="md" icon="clone">View Datasets</mdb-btn>
+            <mdb-btn outline="white" size="md" icon="clone" @click="$emit('change_page','B')">View Datasets</mdb-btn>
           </div>
         </div>
       </mdb-card>

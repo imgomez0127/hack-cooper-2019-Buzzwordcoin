@@ -1,7 +1,7 @@
 <template>
   <mdb-navbar color="indigo" dark>
     <mdb-navbar-brand href="https://mdbootstrap.com/">
-      Navbar
+        ML Coin
     </mdb-navbar-brand>
     <mdb-navbar-toggler>
       <mdb-navbar-nav>

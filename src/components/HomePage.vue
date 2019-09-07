@@ -1,6 +1,6 @@
 <template>
     <div id="HomePage">
-        <JumbotronPage/>
+        <JumbotronPage v-on:change_page="$emit('change_page','B')"/>
         <div id="cards">
             <WaveCard title="Our mission" content="Our mission is to connect talented data scientists, machine learning engineers, and statisticians with large companies and researchers to create models which outperform state of the art implementations" imgSrc="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%286%29.jpg"/>
             <WaveCard title="What we do" content="We utilize a blockchain and partner with large companies to incentivize people to create high accuracy models, and reward them for performing well." imgSrc="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%287%29.jpg"/>
