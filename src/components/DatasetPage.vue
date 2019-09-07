@@ -6,7 +6,7 @@
         </div>
         <div id="accordian" v-if="loaded">
             <div v-for="dataset in panes">
-                <DatasetCard v-bind:title="dataset.title" v-bind:content="dataset.content"/>
+                <DatasetCard v-bind:title="dataset.title" v-bind:content="dataset.content" v-on:upload_file="$emit('upload_file')"/>
             </div>
 
         </div>

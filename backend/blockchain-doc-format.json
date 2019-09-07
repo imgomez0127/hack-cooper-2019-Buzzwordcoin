@@ -1,0 +1,7 @@
+{
+    "_id":ObjectId(),
+    "hash": str,
+    "accuracy":float,
+    "next_hash":str,
+    "date":DateObject()
+}

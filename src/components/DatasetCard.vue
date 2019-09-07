@@ -3,10 +3,10 @@
       <mdb-card>
         <mdb-card-body class="fix-width">
           <mdb-card-title>{{title}}</mdb-card-title>
-          <mdb-card-text class="wrap-words">{{Content}}</mdb-card-text>
+          <mdb-card-text class="wrap-words">{{content}}</mdb-card-text>
           <Button message="Download Dataset" v-bind:link="title"/>
           <div class="file-input">
-            <FileInput/>
+            <FileInput v-on:upload_file="$emit('upload_file')"/>
           </div>
         </mdb-card-body>
       </mdb-card>
@@ -29,7 +29,7 @@
             Button,
             FileInput
         },
-        props:["title","Content",]
+        props:["title","content"]
     }
 </script>
 <style scoped>

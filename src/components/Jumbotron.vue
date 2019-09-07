@@ -15,6 +15,7 @@
 </template>
 
 <script>
+   
   import { mdbCard, mdbBtn } from 'mdbvue';
   export default {
     name: 'JumbotronPage',

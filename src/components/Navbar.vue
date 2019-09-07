@@ -7,7 +7,7 @@
       <mdb-navbar-nav>
         <mdb-nav-item href="#" @click="$emit('change_page','A')">Home</mdb-nav-item>
         <mdb-nav-item href="#Datasets" @click="$emit('change_page','B')">Datasets</mdb-nav-item>
-        <mdb-nav-item href="#Wallet" @click="$emit('change_page','C')">Wallet</mdb-nav-item>
+        <mdb-nav-item href="#Wallet" @click="$emit('change_page','C')">Profile</mdb-nav-item>
       </mdb-navbar-nav>
     </mdb-navbar-toggler>
   </mdb-navbar>
