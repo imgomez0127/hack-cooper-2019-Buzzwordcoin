@@ -23,7 +23,7 @@
                 <h2 class="h6 pb-1"><mdb-icon icon="wallet" class="pr-1"/>My Wallet</h2>
               </a>
               <h1 class="h4 mb-4">Current Balance</h1>
-              <h3 class="font-weight-normal">${{current_balance}}</h3>
+              <h3 class="font-weight-normal">{{current_balance}} ML Coins</h3>
               <mdb-btn color="primary" @click="$emit('change_page','B')">Submit More Models</mdb-btn>
             </mdb-col>
           </mdb-row>
